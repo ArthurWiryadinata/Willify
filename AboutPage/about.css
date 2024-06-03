@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background-color: #101010;
+  }
+  
+  .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section {
+    flex: 1;
+    padding: 4% 10%;
+    margin-top: 50px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-icon {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  #menu {
+    display: none;
+    color: #fff;
+  }
+  
+  .about-us {
+    width: 100%;
+    height: 90vh;
+    background-color: #101010;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  
+  .image img {
+    max-width: 100%;
+    width: 560px;
+    height: auto;
+  }
+  
+  .text {
+    padding: 6% 0;
+  }
+  
+  #History {
+    font-weight: bolder;
+    font-size: 600;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .text h4 {
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .text h1 {
+    color: #fff;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+  
+  hr {
+    width: 30%;
+    border: none;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 50px;
+  }
+  
+  #history-desc {
+    max-width: 600px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  #Founder {
+    font-weight: bolder;
+    font-size: 600;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  #founder-desc {
+    max-width: 600px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  
+  footer {
+    background-color: #010101;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .socials {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #010101;
+  }
+  
+  footer .socials a {
+    color: #fff;
+    margin: 0 1rem;
+  }
+  
+  footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+    background-color: #010101;
+  }
+  
+  footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+  }
+  
+  footer .credit {
+    color: #fff;
+    margin-top: 1rem;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media screen and (max-width: 1385px) {
+    .section {
+      padding: 4% 4%;
+    }
+  
+    .image img {
+      width: 500px;
+      height: auto;
+    }
+    #menu {
+        display: inline-block;
+      }
+      .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+      }
+    
+      .navbar .navbar-nav.active {
+        right: 0;
+      }
+    
+      .navbar .navbar-nav a {
+        color: #010101;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
+  }
+  
+  @media screen and (max-width: 1240px) {
+    .text h1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 1040px) {
+    .about-us {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+  
+    .image img {
+      padding-top: 40px;
+    }
+  }
+  

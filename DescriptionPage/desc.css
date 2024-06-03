@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #101010;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border: 1px solid #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-icon {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+#menu {
+  display: none;
+  color: #fff;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 80px 7% 0; 
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.lyrics-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.tittle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.tittle a {
+  color: #000;
+}
+
+.tittle p {
+  color: #000;
+  font-weight: bold;
+}
+
+.lyrics {
+  max-height: 80vh; 
+  overflow-y: auto; 
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.additional-content {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto; 
+  margin-right: auto;
+}
+.tittle-song-img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tittle-song-img img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.tittle-song-img p {
+  color: #000;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.song-info p {
+  color: #000;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.tittle-song-desc{
+  width: 100%;
+  height: 500px;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#about-artist{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #010101;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: #010101;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 0 1rem;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.1rem;
+  background-color: #010101;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.1rem 1rem;
+}
+
+footer .credit {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  html{
+    font-size: 80%;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #010101;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .content-container {
+      flex-direction: column;
+      padding: 80px 2% 0; 
+  }
+  .lyrics-section,
+  .additional-content {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .lyrics {
+      max-height: 60vh;
+  }
+  
+  .info{
+    max-height: 45vh; 
+    overflow-y: auto; 
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar .navbar-nav {
+      display: flex;
+  }
+  #menu {
+      display: none;
+  }
+}

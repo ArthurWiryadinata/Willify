@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILLIFY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="song.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">WILLIFY</a>
+        <div class="navbar-icon">
+          <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+        <div class="navbar-nav">
+          <a href="/HomePage/home.html">HOME</a>
+          <a href="/SongPage/song.html">SONG</a>
+          <a href="/AboutPage/about.html">ABOUT US</a>
+          <a href="/SignPage/sign.html">SIGN UP</a>
+        </div>
+      </nav>
+    <div class="song-display">
+      <video autoplay muted loop plays-inline class="background-clip">
+        <source
+          src="/Assets/Videos/videoplayback (6).mp4"
+          type="video/mp4"
+        />
+      </video>
+        <p id="song-display-name">SMOOTHIE<br>By NCT DREAM<br></p>
+    </div>
+    <div class="song">
+      <div class="title">
+        <div class="song-row">
+          <pre>#     Song Name</pre>
+          <p><i data-feather="clock"></i></p>
+        </div>
+      </div>
+      <div class="song-row">
+        <div id="table-num">
+          <div id="table-song" onclick="redirectToSongPage()">
+            1
+            <img src="/Assets/Images/smoothie.jpeg" alt="Song Image">
+            <div class="song-info">
+              <span>Smoothie</span>
+              <span>NCT DREAM</span>
+            </div>
+          </div>
+        </div>
+        
+        <div id="table-time">3:15</div>
+      </div>
+    </div>    
+    <footer>
+      <div class="socials">
+        <a href="#">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="#">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="#">
+          <i data-feather="facebook"></i>
+        </a>
+      </div>
+      <div class="links">
+        <a href="">HOME</a>
+        <a href="/SongPage/song.html">SONG</a>
+        <a href="/AboutPage/about.html">ABOUT US</a>
+        <a href="/SignPage/sign.html">SIGN UP</a>
+      </div>
+      <div class="credit">
+        <p>Created by Arthur Wiryadinata. | &copy; 2024</p>
+      </div>
+    </footer>
+    <script>
+        feather.replace();
+      </script>
+
+      <script src="/SongPage/song.js"></script>
+</body>
+</html>
